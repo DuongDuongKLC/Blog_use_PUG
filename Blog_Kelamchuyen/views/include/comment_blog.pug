@@ -1,0 +1,22 @@
+mixin displayComments(comments)
+    each item in comments
+        .comment_your
+            a(class="name_sk")=item.name_fr
+            p=item.content_blog
+.book_end
+    .comment
+        .write_comment
+            span Viết bình luận ...
+            .write_comment_in(contenteditable="true")
+        .send_comment
+            .write_comment
+                a(class="post_comment")
+                    img(src="/picture/send.png", alt="", srcset="")
+                a(class="send2")
+    .info_me
+        img(src="/picture/face.png", alt="", srcset="")
+        h3 Blog của tôi
+        p Là 1 phần con người thật của tôi
+.show_comment(id="style_cm")
+    +displayComments(comments)
+block log_out

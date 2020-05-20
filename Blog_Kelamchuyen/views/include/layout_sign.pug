@@ -1,0 +1,12 @@
+mixin sign_blog_me(opp, name)
+    if(opp)
+        p Xin chào _ 
+            span=name
+block links
+    link(rel="stylesheet", href="css/style_main.css")
+block content
+    .show_your_name
+        +sign_blog_me(opp, name)
+block log_out
+    .logout
+        a(href="/loggout") Đăng xuất

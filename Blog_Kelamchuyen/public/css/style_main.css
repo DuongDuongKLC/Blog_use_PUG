@@ -1,0 +1,49 @@
+.contact_me .sign_blog_cp a {
+  opacity: 0;
+  z-index: -100;
+}
+
+.logout {
+  position: fixed;
+  bottom: 0.5vw;
+  right: 0.5vw;
+  height: 2.5vw;
+  width: 10vw;
+  background: #9e9595;
+  border: 1px solid black;
+  font-family: 'Lemonada', cursive;
+}
+
+.logout a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1vw;
+  position: absolute;
+  left: 0.5vw;
+  top: 0.2vw;
+}
+
+.show_your_name {
+  position: absolute;
+  top: 1vw;
+  left: 5vw;
+  background: white;
+  z-index: 50;
+}
+
+.show_your_name p {
+  font-family: 'Lemonada', cursive;
+  font-size: 1vw;
+}
+
+.book_end .comment .send_comment img {
+  z-index: 5;
+}
+/*# sourceMappingURL=style_main.css.map */

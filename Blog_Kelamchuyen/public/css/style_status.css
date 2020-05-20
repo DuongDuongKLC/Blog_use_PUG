@@ -1,0 +1,116 @@
+.main_status {
+  height: 60vw;
+  background-size: 100% 100%;
+  position: relative;
+  background-image: url("/picture/pages.png");
+  background-size: 100% 100%;
+}
+
+.main_status .icon_book {
+  top: -5.5vw;
+  left: 2vw;
+  position: absolute;
+  height: 4vw;
+  width: 26vw;
+}
+
+.main_status .icon_book h3 {
+  position: absolute;
+  top: 1vw;
+  left: 6vw;
+  font-family: 'Lemonada', cursive;
+  font-size: 1vw;
+}
+
+.main_status .icon_book img {
+  position: absolute;
+  height: 4vw;
+  width: 4vw;
+  border-radius: 50%;
+  border: 1px solid black;
+  left: 1vw;
+  top: 1vw;
+}
+
+.main_status .body_status {
+  top: 5vw;
+  position: absolute;
+  height: 50vw;
+  width: 75%;
+  left: 10.5vw;
+}
+
+.main_status .body_status .left_status {
+  position: absolute;
+  width: 97%;
+  height: 97%;
+}
+
+.main_status .body_status .left_status {
+  left: 3vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10% 90%;
+      grid-template-rows: 10% 90%;
+}
+
+.main_status .body_status .left_status .info_status {
+  width: 100%;
+  font-family: 'Lemonada', cursive;
+  position: relative;
+}
+
+.main_status .body_status .left_status .info_status h3 {
+  position: absolute;
+  font-size: 1vw;
+  top: -1vw;
+  left: 0;
+}
+
+.main_status .body_status .left_status .info_status h4 {
+  position: absolute;
+  font-size: 0.9vw;
+  top: 0;
+  left: 6vw;
+}
+
+.main_status .body_status .left_status .info_status span {
+  position: absolute;
+  font-size: 0.7vw;
+  right: 0;
+}
+
+.main_status .body_status .left_status .content_status {
+  width: 100%;
+  font-family: 'Lemonada', cursive;
+  overflow: auto;
+}
+
+.main_status .body_status .left_status .content_status span {
+  float: left;
+  font-size: 0.9vw;
+}
+
+.main_status .body_status .left_status .content_status img {
+  float: right;
+  height: 15vw;
+  width: 15vw;
+  border: 1px solid black;
+}
+
+.main_status .body_status .left_status .content_status p {
+  font-family: 'Lemonada', cursive;
+  font-size: 0.9vw;
+  text-align: left;
+}
+
+.main_status .body_status .left_status #style_9::-webkit-scrollbar {
+  width: 9px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.main_status .body_status .left_status #style_9::-webkit-scrollbar-thumb {
+  border: 2px solid black;
+}
+/*# sourceMappingURL=style_status.css.map */

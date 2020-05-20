@@ -1,0 +1,123 @@
+%grid_cl {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+%grid_rw {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+%center_main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin set_center($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%, -50%);
+}
+
+// ........................................
+.main_status{
+    height: 60vw;
+    background-size: 100% 100%;
+    position: relative;
+    background-image: url('/picture/pages.png');
+    background-size: 100% 100%;
+    .icon_book{
+        top: -5.5vw;
+        left: 2vw;
+        position: absolute;
+        height: 4vw;
+        width: 26vw;
+        h3{
+            position: absolute;
+            top: 1vw;
+            left: 6vw;
+            font-family: 'Lemonada', cursive;
+            font-size: 1vw;
+        }
+        img{
+            position: absolute;
+            height: 4vw;
+            width: 4vw;
+            border-radius: 50%;
+            border: 1px solid black;
+            left: 1vw;
+            top: 1vw;
+        }
+    }
+    .body_status{
+        top: 5vw;
+        position: absolute;
+        height: 50vw;
+        width: 75%;
+        left: 10.5vw;
+        .left_status{
+            position: absolute;
+            width: 97%;
+            height: 97%;
+        }
+        .left_status{
+            left: 3vw;
+            display: grid;
+            grid-template-rows: 10% 90%;
+            .info_status{
+                width: 100%;
+                font-family: 'Lemonada', cursive;
+                position: relative;
+                h3{
+                    position: absolute;
+                    font-size: 1vw;
+                    top: -1vw;
+                    left: 0;
+                }
+                h4{
+                    position: absolute;
+                    font-size: 0.9vw;
+                    top: 0;
+                    left: 6vw;
+                }
+                span{
+                    position: absolute;
+                    font-size: 0.7vw;
+                    right: 0;
+                }
+            }
+            .content_status{
+                width: 100%;
+                font-family: 'Lemonada', cursive;
+                overflow: auto;
+                span{
+                    float: left;
+                    font-size: 0.9vw;
+                }
+                img{
+                    float: right;
+                    height: 15vw;
+                    width: 15vw;
+                    border: 1px solid black;
+                }
+                p{
+                    font-family: 'Lemonada', cursive;
+                    font-size: 0.9vw;
+                    text-align: left;
+                }
+            }
+            #style_9::-webkit-scrollbar{
+                width: 9px;
+                background-color: white;
+                border: 1px solid black;
+            }
+            
+            #style_9::-webkit-scrollbar-thumb {
+                border: 2px solid black;
+            }
+        }
+    }
+}

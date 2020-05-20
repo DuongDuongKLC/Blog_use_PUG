@@ -1,0 +1,23 @@
+mixin sign_blog_me(opp, name)
+    if(opp)
+        p Xin chào _ 
+            span=name
+        block links
+            link(rel="stylesheet", href="css/style_main.css")
+        block log_out
+            .logout
+                a(href="/loggout") Đăng xuất
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        block title_all
+        include include/style
+    body(id="style")
+        include include/bookshelf
+        include include/body_all_item
+        include include/comment_blog
+        block content
+            .show_your_name
+                +sign_blog_me(opp, name)
